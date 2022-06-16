@@ -1,0 +1,23 @@
+IMPORTANTE:
+El objetivo de este ejercicio es aprender a hacer cambios de diseño encadenando refactorings automatizados, por lo tanto se debe hacer la mayor cantidad de cambios usándolos.
+No vamos a poder verificar que usaron los refactorings cuando podían, traten de ser "sinceros" con ustedes respecto de este requerimiento, además le va a venir muy bien para el parcial conocer bien los refactorings.
+
+Requerimientos:
+- Testear que realmente esté funcionando bien la importación de clientes (hay 2 errores a descubrir y arreglar)
+- Desacoplar la importación del archivo para que se pueda importar desde cualquier tipo de stream, en particular desde un stream de un string.
+- La importación no debe quedar en el test, debe quedar en un method object
+- El test debe quedar bien declarativo y fácil de entender
+- No se debe mejorar el método de importación, eso se hace en la iteración 2
+
+Recordar:
+- setUp se evalúa antes de correr cada test
+- tearDown se evalúa despues de correr cada test
+
+Refactorings a Utilizar:
+- Temporary to Instance variable
+- Extract method
+- Extract as parameter
+- Add Parameter (posiblemente)
+- Extract to method object
+- Inline temporary (deben seleccionar todo el nombre de la variable porque se produce un error sino)
+- Inline Method
